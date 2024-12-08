@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eWallet - Home</title>
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    .header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .balance-card {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .balance-card h2 {
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .balance-card p {
+      font-size: 2.5rem;
+      color: #4CAF50;
+      margin: 10px 0;
+    }
+
+    .quick-actions {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .action {
+      background-color: #fff;
+      flex: 1;
+      margin: 5px;
+      text-align: center;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+    }
+
+    .action:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .action i {
+      font-size: 2rem;
+      color: #4CAF50;
+      margin-bottom: 10px;
+    }
+
+    .action span {
+      display: block;
+      font-size: 1rem;
+      color: #333;
+    }
+
+    .transactions {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .transactions h3 {
+      font-size: 1.2rem;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .transaction {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .transaction:last-child {
+      border-bottom: none;
+    }
+
+    .transaction-details {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .transaction-amount {
+      font-size: 1rem;
+      color: #333;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Welcome to Mzansi Pay</h1>
+  </div>
+
+  <div class="container">
+    <!-- Balance Section -->
+    <div class="balance-card">
+      <h2>Account Balance</h2>
+      <p>R1250.00</p>
+    </div>
+
+    <!-- Quick Actions -->
+    <div class="quick-actions">
+      <div class="action">
+        <i class="bx bx-user-plus"></i>
+        <a href="addsuppliers.html"><span>Add Supplier</span></a>
+      </div>
+      
+      <div class="action">
+        <i class="bx bx-wallet"></i>
+        <a href="paysupplier.html"><span>Pay Supplier</span></a>
+      </div>
+      
+      <div class="action">
+        <i class="bx bx-group"></i>
+        <a href="Stockvel.html"><span>Stockvel</span></a>
+      </div>
+      <div class="action">
+        <i class="bx bx-gift"></i>
+        <a href="rewards.html"><span>Rewards</span></a>
+      </div>
+    </div>
+
+    <!-- Recent Transactions -->
+    <div class="transactions">
+      <h3>Recent Transactions</h3>
+      <div class="transaction">
+        <div class="transaction-details">
+          <span>Pay stokvel</span>
+          <span>Nov 25, 2024</span>
+        </div>
+        <div class="transaction-amount">-R1500.00</div>
+      </div>
+      <div class="transaction">
+        <div class="transaction-details">
+          <span>Paid to mnambithi wholesale</span>
+          <span>Nov 24, 2024</span>
+        </div>
+        <div class="transaction-amount">-R2000.00</div>
+      </div>
+      <div class="transaction">
+        <div class="transaction-details">
+          <span>Paid to Bidfood</span>
+          <span>Nov 23, 2024</span>
+        </div>
+        <div class="transaction-amount">-R2500.00</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

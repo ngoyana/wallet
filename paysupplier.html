@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay Supplier</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0px;
+
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .supplier-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .supplier-row input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .supplier-row label {
+            font-size: 16px;
+            color: #333;
+            margin-right: 10px; /* Add margin to space the label and input */
+        }
+
+        .supplier-row input[type="number"] {
+            width: 120px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #00b36b;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Pay Supplier</h1>
+    </div>
+    <form action="/action_page.php">
+        <div class="header">
+        <h1>Select Supplier</h1>
+    </div>
+        <div class="supplier-row">
+            <input type="checkbox" id="somila" name="somila">
+            <label for="somila">Mnambithi Wholesale</label>
+            <input type="number" id="amount-somila" name="amount-somila" placeholder="Amount">
+        </div>
+
+        <div class="supplier-row">
+            <input type="checkbox" id="liqha" name="liqha">
+            <label for="liqha">Bidfood</label>
+            <input type="number" id="amount-liqha" name="amount-liqha" placeholder="Amount">
+        </div>
+
+        <div class="supplier-row">
+            <input type="checkbox" id="awomi" name="awomi">
+            <label for="awomi">Supplier Phone</label>
+            <input type="number" id="amount-awomi" name="amount-awomi" placeholder="Amount">
+        </div>
+
+        <div class="supplier-row">
+            <input type="checkbox" id="mihla" name="mihla">
+            <label for="mihla">Stokvel account</label>
+            <input type="number" id="amount-mihla" name="amount-mihla" placeholder="Amount">
+        </div>
+        <label for="price">TOTAL AMOUNT:</label>
+        <input type="number" id="amount" name="amount" placeholder="Total Amount">
+
+        <button type="button">Pay Suppliers</button>
+    </form>
+</body>
+</html>

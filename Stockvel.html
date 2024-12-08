@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stockvel Balance</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #fff, #fff);
+            color: #fff;
+        }
+        h3 {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 2em;
+        }
+        h1{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .box-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .box {
+            background: #fff;
+            border-radius: 10px;
+            width: 280px;
+            padding: 20px;
+            text-align: center;
+            color: #333;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        .icon {
+            font-size: 3em;
+            color: #4CAF50;
+            margin-bottom: 15px;
+        }
+        .name {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .details {
+            font-size: 1em;
+            color: #555;
+            margin-bottom: 5px;
+        }
+        .total-box {
+            margin:0;
+            text-align: center;
+            font-size: 1.5em;
+        }
+        .total {
+            font-weight: bold;
+            font-size: 1.8em;
+            color: #fff;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-bottom:20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="header">
+        <h1>Stockvel Account</h1>
+        <h1>Total Stockvel Balance: R13,450</h1>
+    </div>
+    <div class="box-container">
+        <div class="box">
+            <i class="fas fa-user icon"></i>
+            <div class="name">Zwide Company</div>
+            <div class="details">💵 Amount: R2,500</div>
+            <div class="details">📅 Date: 2024-12-01</div>
+            <div class="details">⏰ Time: 10:30 AM</div>
+        </div>
+        <div class="box">
+            <i class="fas fa-user icon"></i>
+            <div class="name">Mnambithi Wholesale</div>
+            <div class="details">💵 Amount: R3,000</div>
+            <div class="details">📅 Date: 2024-12-03</div>
+            <div class="details">⏰ Time: 02:15 PM</div>
+        </div>
+        <div class="box">
+            <i class="fas fa-user icon"></i>
+            <div class="name">Mpisi Group</div>
+            <div class="details">💵 Amount: R4,200</div>
+            <div class="details">📅 Date: 2024-12-05</div>
+            <div class="details">⏰ Time: 09:00 AM</div>
+        </div>
+        <div class="box">
+            <i class="fas fa-user icon"></i>
+            <div class="name"> Bidfood</div>
+            <div class="details">💵 Amount: R3,750</div>
+            <div class="details">📅 Date: 2024-12-06</div>
+            <div class="details">⏰ Time: 01:45 PM</div>
+        </div>
+    </div>
+    
+</body>
+</html>

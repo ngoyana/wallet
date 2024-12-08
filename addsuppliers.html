@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Supplier</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+            max-width: 600px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color:white;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Add a New Supplier</h1>
+        <p>Provide the details of your supplier to add them to the system.</p>
+    </div>
+    <div class="container">
+        <form action="/add-supplier" method="post">
+            <div class="form-group">
+                <label for="supplier-name">Supplier Name</label>
+                <input type="text" id="supplier-name" name="supplier_name" placeholder="Enter supplier name" required>
+            </div>
+            <div class="form-group">
+                <label for="supplier-email">Supplier Email</label>
+                <input type="email" id="supplier-email" name="supplier_email" placeholder="Enter supplier email" required>
+            </div>
+            <div class="form-group">
+                <label for="supplier-phone">Supplier Phone</label>
+                <input type="tel" id="supplier-phone" name="supplier_phone" placeholder="Enter supplier phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="merchant-method">Merchant notification type</label>
+                <select id="merchant-method" name="payment_method" required>
+                    <option value="sms">SMS</option>
+                    <option value="email">e-mail</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="payment-method">Supplier notification type</label>
+                <select id="payment-method" name="payment_method" required>
+                    <option value="sms">SMS</option>
+                    <option value="email">e-Mail</option>
+                </select>
+            </div>
+            <button type="submit" class="btn">Add Supplier</button>
+        </form>
+    </div>
+</body>
+</html>
